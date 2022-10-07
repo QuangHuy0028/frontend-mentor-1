@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap");
+:root {
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --BG-dark-blue: hsl(217, 54%, 11%);
+  --card-dark-blue: hsl(216, 50%, 16%);
+  --line-dark-blue: hsl(215, 32%, 27%);
+  --white-1: hsl(0, 0%, 100%);
+}
+html,
+body {
+  background-color: var(--BG-dark-blue);
+  font-family: "Outfit", sans-serif;
+}
+p {
+  font-size: 18px;
+}
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.round-1 {
+  border-radius: 10px;
+}
+.card {
+  display: block;
+  padding: 20px;
+  background-color: var(--card-dark-blue);
+  width: 300px;
+  min-height: 500px;
+}
+.thumbnail {
+  width: 100%;
+  height: 70%;
+  position: relative;
+  overflow: hidden;
+  margin: 0 0 20px 0;
+}
+.thumbnail .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+.thumbnail .mask:hover {
+    opacity: 1;
+}
+.thumbnail .mask img {
+    width: 50px;
+    height: 50px;
+}
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.heading {
+  margin: 0;
+  font-size: 20px;
+  color: var(--white-1);
+  font-weight: 500;
+}
+.desciption {
+  font-weight: 300;
+  color: var(--soft-blue);
+  font-size: 18px;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+}
+.informations.row {
+  color: var(--cyan);
+  justify-content: space-between;
+}
+.informations img {
+  margin: auto 0;
+  transform: translate(0, 3px);
+}
+.informations {
+  margin: 20px 0;
+}
+
+.divition {
+  height: 1px;
+  background-color: var(--line-dark-blue);
+  border: none;
+}
+
+.personal.row {
+  justify-content: flex-start;
+}
+.personal .avatar {
+  border-radius: 50%;
+  border: 2px var(--white-1) solid;
+  width: 35px;
+  height: 35px;
+  margin: 0 15px 0 0;
+}
+
+.personal .avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.personal span {
+  color: var(--soft-blue);
+  font-weight: 300;
+  margin: auto 0;
+}
+
+.personal span.name {
+  font-weight: 400;
+  margin-left: 5px;
+  color: white;
+}
+
+.personal span.name.hv-color-blue:hover,
+.hv-color-blue:hover {
+  color: var(--soft-blue);
+}
