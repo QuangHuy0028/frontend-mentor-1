@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background: var(--Pale-blue) url(images/pattern-background-desktop.svg)
+    no-repeat top;
+  background-size: cover;
+  font-family: "Red Hat Display", sans-serif;
+}
+.center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.round-1 {
+  border-radius: 15px;
+}
+.card {
+  display: block;
+  overflow: hidden;
+  width: 400px;
+  max-width: 90%;
+  height: auto;
+  background-color: var(--Very-pale-blue);
+  background-color: white;
+}
+.row {
+  display: block;
+  width: 100%;
+  display: flex;
+}
+.col {
+  width: 100%;
+}
+.col-2 {
+  width: calc(100% / 6);
+}
+.col-6 {
+  width: 50%;
+}
+.col-4 {
+  width: 33%;
+}
+.d-flex {
+  display: flex;
+}
+.just-content-end {
+  justify-content: flex-end;
+}
+h1 {
+  font-weight: 900;
+  color: var(--Dark-blue);
+}
+.image-container {
+  height: 30%;
+}
+.thumbnail {
+  width: 100%;
+  height: 100%;
+}
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.content {
+  text-align: center;
+  padding: 30px;
+  padding-top: 10px;
+}
+.content p {
+  font-size: 16px;
+  color: var(--Desaturated-blue);
+}
+
+.music-container {
+  padding: 15px;
+  gap: 12px;
+  background-color: var(--Very-pale-blue);
+}
+.icon-song img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.song-infomartion .row {
+    height: 50%;
+    text-align: left;
+}
+.song-name {
+  font-weight: 900;
+  font-size: 18px;
+  color: var(--Dark-blue);
+}
+.song-cost {
+  color: var(--Desaturated-blue);
+  font-weight: 400;
+}
+.change-btn {
+  display: block;
+  margin: auto 0;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--Bright-blue);
+  transition: 0.2s ease-in-out;
+  border-bottom: 1px var(--Bright-blue) solid;
+}
+.change-btn:hover {
+  color: #766cf1;
+  border-bottom: 1px rgba(0, 0, 0, 0) solid;
+}
+.payment-btn {
+  margin: 30px 0 20px 0;
+  padding: 15px;
+  font-weight: 900;
+  width: 100%;
+  color: white;
+  border: none;
+  background-color: var(--Bright-blue);
+  box-shadow: 0 10px 30px rgba(118, 108, 241, 0.3);
+  transition: 0.2s ease-in-out;
+}
+.payment-btn:hover {
+  background-color: #766cf1;
+}
+.cancel-btn {
+  color: var(--Desaturated-blue);
+  background: none;
+  font-weight: 700;
+  padding: 0px 20px 10px 20px;
+  border: none;
+  transition: 0.2s ease-in-out;
+}
+.cancel-btn:hover {
+  color: var(--Dark-blue);
+}
+
+footer {
+    position: relative;
+}
