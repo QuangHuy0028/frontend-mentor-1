@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+a {
+    color: blue;
+}
+
+header {
+    padding: 15px 20px;
+    border-bottom: 1px gray solid;
+    background: whitesmoke;
+}
+
+.navbar-nav {
+    display: flex;
+    gap: 20px;
+}
+
+.heading {
+    font-size: 30px;
+    margin: 30px 0 30px 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+.col {
+    width: 100%;
+}
+.col-2 {
+    width: calc(100%/12*2);
+}
+.col-10 {
+    width: calc(100%/12*10);
+}
+.card-1 {
+    border: 1px rgba(240, 240, 240, 1) solid;
+    width: 100%;
+    margin-right: 30px;
+    margin-bottom: 25px;
+}
+.card-heading {
+    padding: 5px 10px;
+    background: rgba(240, 240, 240, 1);
+}
+.card-1 li {
+    line-height: 25px;
+}
+.right-site p {
+    margin: 20px 0; 
+}
+.form-create {
+    width: fit-content;
+    min-width: 700px;
+    border: 1px rgba(240, 240, 240, 1) solid;
+    box-shadow: 0 2px rgba(0, 0, 0, 0.5);
+    background: rgba(240, 240, 240, 1);
+    margin-bottom: 30px;
+}
+.form-create form {
+    padding: 10px 10px;
+    border: 1px solid rgba(210, 210, 210, 1);
+}
+
+.form-create h2 {
+    padding: 5px 10px;
+    background: white;
+    font-size: 20px;
+}
+.form-create button { 
+    background: white;
+    border: 1px rgba(210, 210, 210, 1) solid;
+    font-size: 15px;
+    margin: 10px 30px;
+    padding: 5px 10px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+table {
+    border: 1px rgba(0, 0, 0, 0.5) solid;
+    width: fit-content;
+    min-width: 700px;
+}
+table {
+    border-spacing: 0;
+}
+table thead {
+    background-color: rgba(240, 240, 240, 1);
+}
+table th, td {
+    text-align: left;
+    padding: 5px;
+    border: 1px rgba(210, 210, 210, 1) solid;
+}
+
+table tr:nth-child(even) {
+    background-color: rgba(250, 250, 250, 1);
+}
